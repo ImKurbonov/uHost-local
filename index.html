@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uHost/Main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- ===== START SITE HEADER ===== -->
+    <header id="site-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/uhost-icon.png" width="40" height="40" alt="Site logo">
+            </a>
+        </div>
+
+        <nav class="sitenav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="packages/index.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="custom/index.html">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+
+         <!-- ===== START MOBILE STYLES ===== -->
+         <div class="backdrop hidden">
+            <div class="modal hidden">
+                <h1 class="modal-title">Do you want to continue?</h1>
+                <button class="modal-button yes-btn">Yes</button>
+                <button class="modal-button no-btn">No</button>
+             </div>
+         </div>
+         <label for="check">
+          <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="check">
+          <ul class="mobile-list">
+              <li class="mobile-item">
+                  <a href="packages/index.html">Packages</a>
+              </li>
+              <li class="mobile-item">
+                  <a href="custom/index.html">Customers</a>
+              </li>
+              <li class="mobile-item">
+                  <a href="#">Start Hosting</a>
+              </li>
+          </ul>
+     <!-- ===== END MOBILE STYLES ===== -->
+    </header>
+    <!-- ===== END SITE HEADER ===== -->
+
+    <!-- ===== START SITE MAIN ===== -->
+    <main id="site-main">
+                <!-- ===== START PLAN SECTION ===== --> 
+        <div class="bg">
+            <h1>The Number 1 Hosting Company on the Planet! Get the Freedom your Business Deserves.</h1>
+        </div>
+            <!-- ===== PLAN 1 ===== -->
+            <h1 class="title">Choose your plan.</h1>
+            <section id="plan">
+                <div class="plan">
+                    <h1 class="plan-title">FREE</h1>
+                    <h2 class="plan-price">$0/month</h2>
+                    <h3>For hobby projects or small teams.</h3>
+                    <ul class="plan-features__list">
+                        <li class="plan-feature">1 Workspace</li>
+                        <li class="plan-feature">Unlimited Traffic</li>
+                        <li class="plan-feature">10GB Storage</li>
+                        <li class="plan-feature">Basic Support</li>
+                    </ul>
+                    <button class="choose-btn">CHOOSE PLAN</button>
+                </div>
+    
+            <!-- ===== PLAN 2 ===== -->
+                <div class="plan plan-heighlighted">
+                    <h1 class="plan-annatation">RECOMMENDED</h1>
+                    <h1 class="plan-title">PLUS</h1>
+                    <h2 class="plan-price">$29/month</h2>
+                    <h3>For ambitious projects.</h3>
+                    <ul class="plan-features__list">
+                        <li class="plan-feature">5 Workspaces</li>
+                        <li class="plan-feature">Unlimited Traffic</li>
+                        <li class="plan-feature">100GB Storage</li>
+                        <li class="plan-feature">Plus Support</li>
+                    </ul>
+                    <button class="choose-btn">CHOOSE PLAN</button>
+                </div>
+    
+            <!-- ===== PLAN 3 ===== -->
+                <div class="plan">
+                    <h1 class="plan-title">PREMIUM</h1>
+                    <h2 class="plan-price">$99/month</h2>
+                    <h3>Your enterprise solution.</h3>
+                    <ul class="plan-features__list">
+                        <li class="plan-feature">10 Workspaces</li>
+                        <li class="plan-feature">Unlimited Traffic</li>
+                        <li class="plan-feature">Unlimited Storage</li>
+                        <li class="plan-feature">Priority Support</li>
+                    </ul>
+                    <button class="choose-btn">CHOOSE PLAN</button>
+                </div>
+            </section>
+            <!-- ===== END PLAN SECTION ===== --> 
+            <!-- ===== START KEY FEATURES SECTION ===== --> 
+            <article id="key-features">
+                <h1 class="key-feature__title">Many Good Reasons to Stick Around</h1>
+                <div class="key-feature">
+                    <div class="key-img">
+                        <svg viewBox="0 0 512 512"><path style="fill:#f09b24" d="M344 248h-32V112a8 8 0 0 0-8-8h-40a8 8 0 0 0 0 16h32v128h-32a8 8 0 0 0 0 16h32v128h-32a8 8 0 0 0 0 16h40a8 8 0 0 0 8-8V264h32a8 8 0 0 0 0-16z"/><path style="fill:#8e9aa9" d="M264 64H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8z"/><path style="fill:#7c899b" d="M24 144a8 8 0 0 1-8-8V64H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8v-8H24z"/><path style="fill:#b8e3a8" d="M152 96h88v32h-88z"/><path style="fill:#7ec97d" d="M152 96v32h14l32-32zM220 96l-32 32h52V96z"/><path style="fill:#56677e" d="M240 136h-88a8 8 0 0 1-8-8V96a8 8 0 0 1 8-8h88a8 8 0 0 1 8 8v32a8 8 0 0 1-8 8zm-80-16h72v-16h-72v16z"/><path style="fill:#435670" d="M32 136a8 8 0 0 1-8-8V96a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM56 136a8 8 0 0 1-8-8V96a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM80 136a8 8 0 0 1-8-8V96a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM104 136a8 8 0 0 1-8-8V96a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM128 105a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8zM128 136a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8z"/><path style="fill:#8e9aa9" d="M264 208H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8v-80a8 8 0 0 0-8-8z"/><path style="fill:#7c899b" d="M24 288a8 8 0 0 1-8-8v-72H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8v-8H24z"/><path style="fill:#b8e3a8" d="M152 240h88v32h-88z"/><path style="fill:#7ec97d" d="M152 240v32h14l32-32zM220 240l-32 32h52v-32z"/><path style="fill:#56677e" d="M240 280h-88a8 8 0 0 1-8-8v-32a8 8 0 0 1 8-8h88a8 8 0 0 1 8 8v32a8 8 0 0 1-8 8zm-80-16h72v-16h-72v16z"/><path style="fill:#435670" d="M32 280a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM56 280a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM80 280a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM104 280a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM128 249a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8zM128 280a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8z"/><path style="fill:#8e9aa9" d="M264 352H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8v-80a8 8 0 0 0-8-8z"/><path style="fill:#7c899b" d="M24 432a8 8 0 0 1-8-8v-72H8a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h256a8 8 0 0 0 8-8v-8H24z"/><path style="fill:#b8e3a8" d="M152 384h88v32h-88z"/><g><path style="fill:#7ec97d" d="M152 384v32h14l32-32zM220 384l-32 32h52v-32z"/></g><path style="fill:#56677e" d="M240 424h-88a8 8 0 0 1-8-8v-32a8 8 0 0 1 8-8h88a8 8 0 0 1 8 8v32a8 8 0 0 1-8 8zm-80-16h72v-16h-72v16z"/><g><path style="fill:#435670" d="M32 424a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM56 424a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM80 424a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM104 424a8 8 0 0 1-8-8v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-8 8zM128 393a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8zM128 424a8 8 0 0 1-8-8v-1a8 8 0 0 1 16 0v1a8 8 0 0 1-8 8z"/></g><path style="fill:#f7c14d" d="M424 168c-48.523 0-88 39.477-88 88s39.477 88 88 88 88-39.477 88-88-39.477-88-88-88z"/><path style="fill:#ffdb66" d="M424 184c-39.701 0-72 32.299-72 72s32.299 72 72 72 72-32.299 72-72-32.299-72-72-72z"/><path style="fill:#69788d" d="M484.893 314.16C476.393 274.588 451.922 248 424 248s-52.393 26.588-60.893 66.16a8.004 8.004 0 0 0 2.511 7.664C381.731 336.124 402.465 344 424 344s42.269-7.876 58.381-22.176a8.003 8.003 0 0 0 2.512-7.664z"/><path style="fill:#56677e" d="M434.053 249.171A44.066 44.066 0 0 0 424 248c-27.922 0-52.393 26.588-60.893 66.16a8.004 8.004 0 0 0 2.511 7.664 88.067 88.067 0 0 0 10.734 8.125c8.552-43.706 31.021-74.571 57.701-80.778z"/><path style="fill:#69788d" d="M424 192c-17.645 0-32 14.355-32 32s14.355 32 32 32 32-14.355 32-32-14.355-32-32-32z"/><path style="fill:#56677e" d="M432 248c-17.645 0-32-14.355-32-32a31.815 31.815 0 0 1 5.742-18.258C397.444 203.53 392 213.138 392 224c0 17.645 14.355 32 32 32 10.862 0 20.471-5.444 26.258-13.742A31.815 31.815 0 0 1 432 248z"/></svg>
+                    </div>
+                    <span>3,857,000 Trusting Customers</span>
+                </div>
+                <div class="key-feature">
+                    <div class="key-img">
+                        <svg viewBox="0 0 512 512"><path style="fill:#69788d" d="M248 0H8a8 8 0 0 0-8 8v496a8 8 0 0 0 8 8h240a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8z"/><path style="fill:#56677e" d="M24 504V8a8 8 0 0 1 8-8H8a8 8 0 0 0-8 8v496a8 8 0 0 0 8 8h24a8 8 0 0 1-8-8z"/><path style="fill:#435670" d="M0 112h256v16H0zM0 240h256v16H0z"/><path style="fill:#f7c14d" d="M128 392c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z"/><path style="fill:#ffdb66" d="M128 408c-13.233 0-24 10.767-24 24s10.767 24 24 24 24-10.767 24-24-10.767-24-24-24z"/><path style="fill:#f7c14d" d="M128 392c-2.739 0-5.414.278-8 .805V424a8 8 0 0 0 16 0v-31.195a40.028 40.028 0 0 0-8-.805z"/><path style="fill:#435670" d="M216 288H40a8 8 0 0 1 0-16h176a8 8 0 0 1 0 16zM216 328H40a8 8 0 0 1 0-16h176a8 8 0 0 1 0 16zM216 368H40a8 8 0 0 1 0-16h176a8 8 0 0 1 0 16zM216 16H40a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8V24a8 8 0 0 0-8-8z"/><path style="fill:#56677e" d="M48 32h160v48H48z"/><path style="fill:#435670" d="M216 144H40a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8v-64a8 8 0 0 0-8-8z"/><path style="fill:#56677e" d="M48 160h160v48H48z"/><path style="fill:#f09b24" d="M511.747 180.237c-.194-6.537-8.107-10.107-13.135-5.894-5.6 4.693-42.904 21.282-98.514 21.282-33.45 0-64.625-20.999-64.929-21.206a7.993 7.993 0 0 0-9.512.346c-2.677 2.135-27.201 20.86-63.793 20.86-55.607 0-92.914-16.589-98.515-21.282-5.028-4.211-12.941-.645-13.135 5.894-1.634 54.834 4.655 105.941 18.693 151.903 12.096 39.604 29.759 74.047 52.497 102.373 27.538 34.304 62.743 59.882 104.66 76.045 3.069 1.918 6.757 1.921 9.83 0 41.917-16.163 77.122-41.741 104.66-76.045 22.738-28.326 40.401-62.77 52.497-102.373 14.041-45.961 20.33-97.069 18.696-151.903z"/><path style="fill:#f7c14d" d="M476.21 221.226a8 8 0 0 0-7.036-1.628c-21.686 5.327-44.926 8.028-69.075 8.028-25.926 0-49.633-8.975-64.955-16.504a7.995 7.995 0 0 0-7.284.116c-14.059 7.477-36.919 16.388-65.994 16.388-24.153 0-47.394-2.701-69.075-8.028-5.155-1.268-10.221 2.966-9.894 8.261 2.077 33.693 7.668 65.635 16.616 94.935 22.774 74.565 66.139 126.334 128.888 153.868a8.068 8.068 0 0 0 6.43 0c61.777-27.107 104.716-78.876 127.62-153.868 8.948-29.3 14.539-61.241 16.616-94.935a7.997 7.997 0 0 0-2.857-6.633z"/><path style="fill:#ffdb66" d="M331.609 451.727c-52.604-25.289-89.304-70.987-109.144-135.944-6.532-21.39-11.162-44.336-13.82-68.447 17.133 2.852 34.952 4.291 53.22 4.291 29.394 0 53.376-7.793 69.978-15.561 17.44 7.736 41.656 15.561 68.256 15.561 18.267 0 36.085-1.439 53.219-4.291-2.659 24.112-7.288 47.06-13.82 68.448-19.953 65.324-56.228 111.021-107.889 135.943z"/><g><path style="fill:#2c9dd4" d="M479.066 227.858a7.999 7.999 0 0 0-9.892-8.261c-21.686 5.327-44.926 8.028-69.075 8.028-25.926 0-49.633-8.975-64.955-16.504a7.972 7.972 0 0 0-3.345-.806l-.072 133.351h123.601a335.111 335.111 0 0 0 7.123-20.874c8.947-29.299 14.538-61.24 16.615-94.934zM206.658 343.667c24.153 63.42 65.028 108.108 121.743 132.995a8.008 8.008 0 0 0 3.263.666l.063-133.661H206.658z"/></g><g><path style="fill:#3cbde8" d="M439.497 315.783c6.532-21.389 11.161-44.336 13.82-68.448-17.134 2.852-34.952 4.291-53.219 4.291-26.6 0-50.815-7.824-68.256-15.561l-.116 107.601h97.758c3.695-8.859 7.04-18.148 10.013-27.883zM232.523 343.667c21.144 50.298 54.363 86.56 99.087 108.06l.117-108.06h-99.204z"/></g></svg>
+                    </div>
+                    <span>99.999% Uptime Guarantee</span>
+                </div>
+                <div class="key-feature">
+                   <div class="key-img">
+            <svg viewBox="0 0 512 512"><path style="fill:#8e9aa9" d="M168 200a8 8 0 0 0-8 8v120h-17.376c-3.302-9.311-12.194-16-22.624-16-13.234 0-24 10.767-24 24s10.766 24 24 24c10.429 0 19.321-6.689 22.624-16H168a8 8 0 0 0 8-8V208a8 8 0 0 0-8-8z"/><path style="fill:#ffdb66" d="M120 328c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#56677e" d="M208 200a8 8 0 0 0-8 8v184H94.624C91.322 382.689 82.43 376 72 376c-13.234 0-24 10.767-24 24s10.766 24 24 24c10.429 0 19.321-6.689 22.624-16H208a8 8 0 0 0 8-8V208a8 8 0 0 0-8-8z"/><path style="fill:#ffdb66" d="M72 392c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#69788d" d="M240 208a8 8 0 0 0-8 8v239H47.24c-2.671-10.34-12.078-18-23.24-18-13.234 0-24 10.767-24 24s10.766 24 24 24c9.666 0 18.009-5.747 21.809-14H240a8 8 0 0 0 8-8V216a8 8 0 0 0-8-8z"/><path style="fill:#ffdb66" d="M24 453c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#69788d" d="M488 464c-10.429 0-19.321 6.689-22.624 16H280V208a8 8 0 0 0-16 0v280a8 8 0 0 0 8 8h193.376c3.302 9.311 12.194 16 22.624 16 13.234 0 24-10.767 24-24s-10.766-24-24-24z"/><path style="fill:#ffdb66" d="M488 480c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#56677e" d="M456 408c-10.429 0-19.321 6.689-22.624 16H312V208a8 8 0 0 0-16 0v224a8 8 0 0 0 8 8h129.376c3.302 9.311 12.194 16 22.624 16 13.234 0 24-10.767 24-24s-10.766-24-24-24z"/><path style="fill:#ffdb66" d="M456 424c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#8e9aa9" d="M416 344c-10.429 0-19.321 6.689-22.624 16H352V208a8 8 0 0 0-16 0v160a8 8 0 0 0 8 8h49.376c3.302 9.311 12.194 16 22.624 16 13.234 0 24-10.767 24-24s-10.766-24-24-24z"/><path style="fill:#ffdb66" d="M416 360c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#3cbde8" d="M362 88c-8.741 0-17.231 1.751-25.06 5.085A80.46 80.46 0 0 0 338 80c0-44.112-35.888-80-80-80-42.823 0-77.895 33.816-79.909 76.149A71.996 71.996 0 0 0 154 72c-39.701 0-72 32.299-72 72s32.299 72 72 72h208c35.29 0 64-28.71 64-64s-28.71-64-64-64z"/><path style="fill:#2c9dd4" d="M368 200H160c-39.701 0-72-32.299-72-72 0-5.863.721-11.559 2.05-17.019A71.53 71.53 0 0 0 82 144c0 39.701 32.299 72 72 72h208c30.389 0 55.88-21.296 62.379-49.743C413.565 186.327 392.352 200 368 200z"/><path style="fill:#2a7db5" d="M256 128c-13.234 0-24 10.767-24 24s10.766 24 24 24c13.233 0 24-10.767 24-24s-10.767-24-24-24z"/><path style="fill:#2c9dd4" d="M256 144c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"/><path style="fill:#c5f1fa" d="M221.755 87.695a8 8 0 0 1-3.435-15.229C230.157 66.849 242.834 64 256 64s25.844 2.849 37.68 8.466a8 8 0 0 1-6.859 14.455C277.144 82.328 266.774 80 256 80c-10.774 0-21.144 2.328-30.821 6.921a7.975 7.975 0 0 1-3.424.774zM276.545 116.618a7.981 7.981 0 0 1-3.424-.774C267.745 113.293 261.985 112 256 112c-5.985 0-11.745 1.293-17.121 3.844a8 8 0 0 1-6.859-14.455C239.557 97.813 247.625 96 256 96c8.376 0 16.444 1.813 23.98 5.389a8 8 0 0 1-3.435 15.229z"/></svg>
+                   </div>
+                    <span>Lightning Fast CDN</span>
+                </div>
+            </article>
+            <!-- ===== END KEY FEATURES SECTION ===== --> 
+    </main>
+    <!-- ===== END SITE MAIN ===== -->
+
+    <!-- ===== START SITE FOOTER ===== -->
+        <footer id="site-footer">
+            <div class="links">
+                <a href="#">Support</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </footer>
+    <!-- ===== END SITE FOOTER ===== -->
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="srcipt.js"></script>
+</body>
+</html>

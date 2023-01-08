@@ -1,0 +1,230 @@
+/* ===== START GLOBAL STYLES ===== */
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), 
+         url('../fonts/roboto-v30-latin-500.woff') format('woff');
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), 
+         url('../fonts/roboto-v30-latin-700.woff') format('woff');
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-900.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-900.woff') format('woff');
+  }
+
+:root {
+    --color-purple: #ff1b68;
+    --color-white: #fff;
+    --color-green: #2ddf5c;
+    --color-plan: #2ddf5da3;
+    --color-greenblack: #0e4f1f;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ===== END GLOBAL STYLES ===== */
+
+/* ===== START SITE HEADER ===== */
+#site-header {
+    background-color: var(--color-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-link {
+    color: var(--color-greenblack);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    border-bottom: 5px solid var(--color-white);
+    color: var(--color-white);
+    padding-bottom: 3px;
+}
+
+.nav-link:active {
+    opacity: 0.5;
+}
+
+.nav-item  .active {
+    animation: rotate 200ms 3s 8 ease-out none;
+    border-radius: 8px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.nav-item .active:hover {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+}
+
+.nav-item .active:active {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    opacity: 0.5;
+}
+/* ===== END SITE HEADER ===== */
+
+/* ===== START SITE FOOTER ===== */
+#site-footer {
+    background-color: #000;
+    padding: 3.1rem;
+    text-align: center;
+}
+
+.links a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.links a:hover {
+    color: #888;
+}
+/* ===== END SITE FOOTER ===== */
+
+/* ===== START MOBILE STYLES ===== */
+.mobile-list {
+    background-color: var(--color-white);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.mobile-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.mobile-item a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mobile-item a:hover {
+    color: #ff0000;
+}
+
+.mobile-item a:active {
+    color: #0000ff;
+}
+
+input:checked + .mobile-list {
+    left: 0;
+}
+
+label {
+    display: none;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#check {
+    display: none;
+}
+/* ===== END MOBILE STYLES ===== */
+
+@media screen and (max-width: 576px) {
+    .bg {
+        margin-top: 45px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+}
+
+/* ===== START ANIMATION SECTION ===== */
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
+/* ===== END ANIMATION SECTION ===== */

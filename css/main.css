@@ -1,0 +1,302 @@
+/* ===== START SITE MAIN ===== */
+    .bg {
+        background-image: url('../images/freedom-1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 45px;
+        height: 55vh;
+        position: relative;
+    }
+
+    .bg > h1 {
+        color: var(--color-purple);
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        font-size: 1.2rem;
+        line-height: 25px;
+        width: 90%;
+    }
+
+/* ===== CHOOSE YOUR PLAN ===== */
+#plan {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 90%;
+}
+
+.title {
+    color: var(--color-greenblack);
+    font-size: 50px;
+    text-align: center;
+}
+
+.plan {
+    background-color: var(--color-plan);
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem 0.2rem;
+    text-align: center;
+    width: 30%;
+}
+
+.plan-title {
+    color: rgb(14, 79, 31);
+}
+
+.plan-price {
+    color: rgb(103, 103, 103);
+}
+
+.plan-heighlighted {
+    background: rgba(35, 138, 38, 0.906);
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 50%);
+    color: var(--color-white);
+}
+
+.plan-annatation {
+    background: #fff;
+    color: #238a26e7;
+    font-size: 1.5rem;
+    padding: 0.625rem;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+}
+
+.plan-heighlighted > .plan-price {
+    color: rgb(14, 79, 31);
+}
+
+.plan-features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan-feature {
+    margin-top: 10px;
+}
+
+.choose-btn {
+    background: #0e4f1f;
+    color: #fff;
+    border: 1px solid var(--color-greenblack);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.choose-btn:hover {
+    border-color: #0e4f1f;
+    color: #0e4f1f;
+    background-color: var(--color-white);
+}
+
+.choose-btn:active {
+    background-color: #0e4f1f;
+    border-color: #0e4f1f;
+    color: var(--color-white);
+    opacity: 0.5;
+}
+/* ===== END CHOOSE YOUR PLAN SECTION ===== */
+
+/* ===== KEY FEATURES ===== */
+#key-features {
+    background-color: var(--color-purple);
+    flex-wrap: nowrap;
+    color: var(--color-white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    max-width: 396px;
+    width: 100%;
+}
+
+.key-feature__title {
+    font-size: 3rem;
+}
+
+.key-img {
+    background: #ffcede;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 1.25rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.key-feature span {
+    font-weight: bold;
+}
+/* ===== END KEY FEATURES SECTION ===== */
+
+/* ===== START MOBILE STYLES ===== */
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+.modal {
+    background-color: var(--color-white);
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    padding: 2rem;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.modal-button {
+    border: 0;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 0.4rem;
+    max-width: 100px;
+    width: 100%;
+}
+
+.yes-btn {
+    border: 1px solid var(--color-greenblack);
+    background-color: var(--color-greenblack);
+    margin-right: 10px;
+}
+
+.no-btn {
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+}
+
+.yes-btn:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-greenblack);
+    color: var(--color-greenblack);
+}
+
+.yes-btn:active {
+    background-color: var(--color-greenblack);
+    color: var(--color-white);
+    opacity: 0.5;
+}
+
+.no-btn:hover {
+    background-color: var(--color-white);
+    border-color: #ff0000;
+    color: #ff0000
+}
+
+.no-btn:active {
+    background-color: #ff0000;
+    color: var(--color-white);
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}
+/* ===== END MOBILE STYLES ===== */
+/* ===== END SITE MAIN ===== */
+
+/* ===== START MEDIA QUERIES ===== */
+@media screen and (max-width: 576px) {
+    .bg > h1 {
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+        width: 70%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    #plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+    .plan-title, .plan-price {
+        font-size: 1.3rem;
+    }
+
+    .key-feature__title {
+        font-size: 2.3rem;
+    }
+
+    .key-feature:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .modal {
+        width: 70%;
+        left: 15%;
+    }
+
+    .modal-title {
+        font-size: 1.8rem;
+    }
+
+    .yes-btn {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width:900px) {
+    #plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan {
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .modal {
+        left: 10%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1001px) {
+    #plan {
+        display: flex;
+    }
+
+    .plan {
+        width: 40%;
+    }
+
+    .modal {
+        left: 15%;
+    }
+}
+/* ===== END MEDIA QUERIES ===== */
